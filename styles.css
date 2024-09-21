@@ -4,9 +4,9 @@ body {
   margin: 0;
   padding: 0;
   background-image: url('picture.jpg');
-  background-size: cover;
+  background-size: cover; /* Ensure the background covers the entire viewport */
   background-position: center;
-  color: #f0f0f0;
+  color: #f0f0f0; /* Light text color */
 }
 
 /* Container */
@@ -15,14 +15,14 @@ body {
   margin: 50px auto;
   padding: 20px;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8); /* Darker background for the container */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Heading */
 h1 {
   text-align: center;
-  color: #f0f0f0;
+  color: #f0f0f0; /* Light text color */
 }
 
 /* List */
@@ -32,20 +32,33 @@ ul {
 }
 
 li {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
-/* Links styled as buttons */
+/* Links */
 a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #1e90ff;
-  color: #fff;
   text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  color: #1e90ff; /* Light blue color for links */
+  transition: color 0.3s ease;
 }
 
 a:hover {
-  background-color: #63b8ff;
+  color: #63b8ff; /* Lighter blue on hover */
+}
+
+/* Buttons */
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1e90ff; /* Light blue color for buttons */
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #63b8ff; /* Lighter blue on hover */
 }
