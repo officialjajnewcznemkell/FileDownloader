@@ -34,15 +34,21 @@
       <li><a href="https://drive.google.com/file/d/1FtYKJI09uhSdakNG7sAiCGRZgvyLGlKO/view?usp=drive_link" target="_blank">Office 2019 Proffessional Plus Hun</a></li>
 
       
-      <!-- Autoplay audio when the site loads -->
-  <audio id="background-audio" autoplay loop>
+      <!-- Add a play button for user interaction -->
+    <button id="play-audio">Play Background Audio</button>
+  </div>
+
+  <!-- Audio element, without autoplay -->
+  <audio id="background-audio" loop>
     <source src="web.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 
-  <script src="scripts.js"></script>
-</body>
-</html>
+  <script>
+    document.getElementById('play-audio').addEventListener('click', function() {
+      var audio = document.getElementById('background-audio');
+      audio.play();
+    });
       
     </ul>
   </div>
