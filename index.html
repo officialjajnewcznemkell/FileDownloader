@@ -37,19 +37,19 @@
       <!-- Add a play button for user interaction -->
     <button id="play-audio">onestop.mid</button>
   </div>
-
-  <audio id="background-audio" loop>
+<button id="play-audio">Play Background Audio</button>
+<audio id="background-audio" loop>
   <source src="web.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 
+<script>
+  document.getElementById('play-audio').addEventListener('click', function() {
+    var audio = document.getElementById('background-audio');
+    audio.play();
+  });
+</script>
 
-  <script>
-    document.getElementById('play-audio').addEventListener('click', function() {
-      var audio = document.getElementById('background-audio');
-      audio.play();
-    });
-      
     </ul>
   </div>
   <script src="scripts.js"></script>
