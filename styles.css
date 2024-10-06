@@ -1,0 +1,98 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: url('picture.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire screen */
+    color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .file-explorer {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(46, 46, 46, 0.9); /* Transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #ffffff;
+  }
+  
+  ul.folder {
+    list-style-type: none;
+  }
+  
+  .folder-item {
+    margin-bottom: 15px;
+  }
+  
+  .folder-name {
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #383838;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .folder-name:hover {
+    background-color: #505050;
+  }
+  
+  ul.files {
+    margin-top: 10px;
+    padding-left: 20px;
+    display: none;
+  }
+  
+  ul.files li {
+    margin-bottom: 10px;
+  }
+  
+  ul.files li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  ul.files li a:hover {
+    color: #1e90ff;
+  }
+  
+  a::before {
+    margin-right: 10px;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: #1e90ff;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #006bbf;
+  }
+  
